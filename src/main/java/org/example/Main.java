@@ -1,5 +1,9 @@
 package org.example;
 
+ Lesson_2
+public class Main {
+}
+=======
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -15,3 +19,4 @@ public class Main {
         }
     }
 }
+ main
