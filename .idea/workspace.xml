@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e33e2b6c-5c60-4270-8e72-5927b9ddcab1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_2/lesson_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Bowl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson_1/Lesson_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson_2/Lesson_2.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="lesson-3" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -60,7 +70,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "lesson-3",
+    "git-widget-placeholder": "lesson-4",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -89,9 +99,19 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="a1e5c10e-7f37-428a-81da-062e4f17df05" value="EDITOR" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="a1e5c10e-7f37-428a-81da-062e4f17df05">
           <value>
             <State />
           </value>
