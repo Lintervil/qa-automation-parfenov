@@ -3,6 +3,10 @@ package lesson_4;
 public class Bowl {
     private int foodAmount;
 
+    public Bowl() {
+        this.foodAmount = 0;
+    }
+
     public Bowl(int foodAmount) {
         this.foodAmount = Math.max(0, foodAmount);
     }

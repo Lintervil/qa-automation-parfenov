@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e33e2b6c-5c60-4270-8e72-5927b9ddcab1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Bowl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_4/ColoredShape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson_4/Bowl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Bowl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson_4/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson_4/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson_4/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_4/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +66,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "lesson-4",
+    "git-widget-placeholder": "#4 on lesson-4",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",

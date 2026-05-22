@@ -1,19 +1,16 @@
 package lesson_4;
 
-public class Triangle implements Shape {
+public class Triangle extends ColoredShape {
     private double sideA;
     private double sideB;
     private double sideC;
-    private String fillColor;
-    private String borderColor;
 
     public Triangle(double sideA, double sideB, double sideC,
                     String fillColor, String borderColor) {
+        super(fillColor, borderColor);
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
-        this.fillColor = fillColor;
-        this.borderColor = borderColor;
     }
 
     @Override
@@ -23,18 +20,7 @@ public class Triangle implements Shape {
 
     @Override
     public double calculateArea() {
-        // Формула Герона
         double s = calculatePerimeter() / 2;
         return Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
-    }
-
-    @Override
-    public String getFillColor() {
-        return fillColor;
-    }
-
-    @Override
-    public String getBorderColor() {
-        return borderColor;
     }
 }
