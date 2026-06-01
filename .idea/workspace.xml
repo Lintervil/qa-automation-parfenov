@@ -5,17 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e33e2b6c-5c60-4270-8e72-5927b9ddcab1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_7/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_7/Factorial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_7/NumberComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_7/TriangleArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson_7/CalculatorTestNG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson_7/FactorialTestNG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson_7/NumberComparatorTestNG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson_7/TriangleAreaTestNG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +21,6 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,14 +52,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Lesson_2.executor": "Run",
-    "JUnit.lesson_7 in qa-automation-parfenov.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Lesson__7__testng",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -86,21 +72,6 @@
     "settings.editor.selected.configurable": "database.data.views.appearance"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="lesson_7 in qa-automation-parfenov" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="qa-automation-parfenov" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/lesson_7" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.lesson_7 in qa-automation-parfenov" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e33e2b6c-5c60-4270-8e72-5927b9ddcab1" name="Changes" comment="" />
@@ -124,9 +95,19 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="a1e5c10e-7f37-428a-81da-062e4f17df05" value="EDITOR" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="a1e5c10e-7f37-428a-81da-062e4f17df05">
           <value>
             <State />
           </value>
