@@ -4,7 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e33e2b6c-5c60-4270-8e72-5927b9ddcab1" name="Changes" comment="">
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,5 +113,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lesson_7_junit_5: реализованы 4 программы + JUnit 5 тесты" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson_7_junit_5: реализованы 4 программы + JUnit 5 тесты" />
   </component>
 </project>
