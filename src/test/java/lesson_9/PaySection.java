@@ -48,22 +48,25 @@ public class PaySection {
     }
 
     public void fillFormAndCheckContinueButton() {
-        // Более широкий поиск поля телефона
+        // Находим поле телефона
         WebElement phoneField = wait.until(ExpectedConditions.presenceOfElementLocated(
-                By.xpath("//input[contains(@name, 'phone') or @type='tel' or contains(@placeholder, '375')]")
+                By.xpath("//input[contains(@name,'phone') or @type='tel' or contains(@placeholder,'375')]")
         ));
 
-        // Прокрутка к полю
+        // Прокрутка
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", phoneField);
 
-        // Очистка и ввод через JavaScript (самый надёжный способ)
-        ((JavascriptExecutor) driver).executeScript("arguments[0].value = '';", phoneField);
+        // Ввод номера
         ((JavascriptExecutor) driver).executeScript("arguments[0].value = '297777777';", phoneField);
 
-        // Проверка кнопки "Продолжить"
-        WebElement continueButton = driver.findElement(By.xpath("//button[contains(text(), 'Продолжить')]"));
+        // Ждём, пока кнопка "Продолжить" станет активной
+        WebElement continueButton = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//button[contains(text(), 'Продолжить')]")
+        ));
 
-        assert continueButton.isDisplayed() : "Кнопка 'Продолжить' не найдена";
+        // Основная проверка по требованию преподавателя
+        assert continueButton.isEnabled() : "Кнопка 'Продолжить' должна быть активна (enabled) после ввода номера";
+
         System.out.println("Номер 297777777 успешно введён");
         System.out.println("Кнопка 'Продолжить' активна");
     }
