@@ -48,23 +48,19 @@ public class PaySection {
     }
 
     public void fillFormAndCheckContinueButton() {
-        // Находим поле телефона
+
         WebElement phoneField = wait.until(ExpectedConditions.presenceOfElementLocated(
                 By.xpath("//input[contains(@name,'phone') or @type='tel' or contains(@placeholder,'375')]")
         ));
 
-        // Прокрутка
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", phoneField);
 
-        // Ввод номера
         ((JavascriptExecutor) driver).executeScript("arguments[0].value = '297777777';", phoneField);
 
-        // Ждём, пока кнопка "Продолжить" станет активной
         WebElement continueButton = wait.until(ExpectedConditions.elementToBeClickable(
                 By.xpath("//button[contains(text(), 'Продолжить')]")
         ));
 
-        // Основная проверка по требованию преподавателя
         assert continueButton.isEnabled() : "Кнопка 'Продолжить' должна быть активна (enabled) после ввода номера";
 
         System.out.println("Номер 297777777 успешно введён");
