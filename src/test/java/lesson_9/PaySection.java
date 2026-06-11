@@ -1,5 +1,6 @@
 package lesson_9;
 
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -27,15 +28,17 @@ public class PaySection {
 
         String actualText = title.getText().replace("\n", " ").trim();
 
-        assert actualText.contains("Онлайн пополнение без комиссии") :
-                "Неверное название блока! Ожидалось: 'Онлайн пополнение без комиссии', а было: " + actualText;
+        Assertions.assertTrue(actualText.contains("Онлайн пополнение без комиссии"),
+                "Неверное название блока! Ожидалось: 'Онлайн пополнение без комиссии', а было: " + actualText);
 
         System.out.println("Название блока проверено: " + actualText);
     }
 
     public void checkPaymentLogos() {
         List<WebElement> logos = driver.findElements(By.cssSelector("img.pay__partner__logo, .pay__partners img"));
-        assert logos.size() >= 4 : "Мало логотипов платежных систем. Найдено: " + logos.size();
+
+        Assertions.assertTrue(logos.size() >= 4,
+                "Мало логотипов платежных систем. Найдено: " + logos.size());
         System.out.println("Логотипов платежных систем найдено: " + logos.size());
     }
 
@@ -43,12 +46,13 @@ public class PaySection {
         WebElement link = wait.until(ExpectedConditions.elementToBeClickable(
                 By.xpath("//a[contains(text(), 'Подробнее о сервисе')]")
         ));
-        assert link.isDisplayed() : "Ссылка 'Подробнее о сервисе' не найдена";
+
+        Assertions.assertTrue(link.isDisplayed(),
+                "Ссылка 'Подробнее о сервисе' не найдена");
         System.out.println("Ссылка 'Подробнее о сервисе' найдена");
     }
 
     public void fillFormAndCheckContinueButton() {
-
         WebElement phoneField = wait.until(ExpectedConditions.presenceOfElementLocated(
                 By.xpath("//input[contains(@name,'phone') or @type='tel' or contains(@placeholder,'375')]")
         ));
@@ -61,9 +65,27 @@ public class PaySection {
                 By.xpath("//button[contains(text(), 'Продолжить')]")
         ));
 
-        assert continueButton.isEnabled() : "Кнопка 'Продолжить' должна быть активна (enabled) после ввода номера";
+        Assertions.assertTrue(continueButton.isEnabled(),
+                "Кнопка 'Продолжить' должна быть активна (enabled) после ввода номера");
 
         System.out.println("Номер 297777777 успешно введён");
         System.out.println("Кнопка 'Продолжить' активна");
+
+        continueButton.click();
+        System.out.println("Кнопка 'Продолжить' нажата");
+
+        try {
+            wait.until(ExpectedConditions.invisibilityOf(phoneField));
+            System.out.println("✓ Форма была отправлена - поле телефона скрыто");
+        } catch (Exception e) {
+            try {
+                WebElement errorMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                        By.xpath("//*[contains(text(), 'ошиб') or contains(text(), 'Ошиб') or contains(text(), 'код')]")
+                ));
+                System.out.println("✓ Получено сообщение после нажатия кнопки: " + errorMessage.getText());
+            } catch (Exception ex) {
+                Assertions.fail("После нажатия кнопки 'Продолжить' должны были произойти изменения на странице");
+            }
+        }
     }
 }
