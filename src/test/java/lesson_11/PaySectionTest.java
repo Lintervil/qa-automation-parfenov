@@ -22,6 +22,6 @@ public class PaySectionTest extends BaseTest {
         paySection.fillFormAndCheckContinueButton();
         paySection.checkPaymentConfirmationWindow();
 
-        System.out.println("✓✓✓ Все проверки успешно пройдены! ✓✓✓\n");
+        System.out.println("--- Все проверки успешно пройдены! ---\n");
     }
 }
